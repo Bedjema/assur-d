@@ -1,0 +1,98 @@
+
+/* Side Panel */
+html.side-panel .body:before {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: var(--dark-rgba-50);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 9998;
+	transition: ease opacity 300ms;
+}
+
+html.side-panel .side-panel-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 660px;
+	height: 100vh;
+	background: var(--light);
+	padding: 32px;
+	padding: 2rem;
+	box-shadow: 0px 0px 30px -13px rgba(0, 0, 0, 0.2);
+	overflow-y: auto;
+	transform: translate3d(-100%, 0, 0);
+	transition: ease transform 300ms;
+	z-index: 9999;
+}
+
+html.side-panel .side-panel-wrapper .side-panel-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+html.side-panel.side-panel-push .body {
+	transform: translate3d(0, 0, 0);
+	transition: ease transform 300ms;
+}
+
+html.side-panel.side-panel-right .side-panel-wrapper {
+	left: auto;
+	right: 0;
+	transform: translate3d(100%, 0, 0);
+}
+
+html.side-panel.side-panel-without-overlay .body:before {
+	content: none;
+}
+
+html.side-panel.side-panel-open .body:before {
+	opacity: 1;
+	visibility: visible;
+}
+
+html.side-panel.side-panel-open .side-panel-wrapper {
+	transform: translate3d(0, 0, 0);
+}
+
+html.side-panel.side-panel-open.side-panel-push .body {
+	transform: translate3d(300px, 0, 0);
+}
+
+html.side-panel.side-panel-open.side-panel-push.side-panel-right .body {
+	transform: translate3d(-300px, 0, 0);
+}
+.contact-form .form-control {
+    background: #f4f4f4 !important;
+    border-radius: 10px !important;
+    height: auto !important;
+    padding: 9px 10px !important;
+    border: 2px solid #80808042 !important;
+}
+.form-group {
+    margin-bottom: .5rem !important;
+}
+
+.custom-card-style-1 .custom-card-style-1-image-wrapper img {
+    transform: translate3d(5px, -5px, 0);
+    transition: ease transform 300ms;
+}
+
+.custom-card-style-1 .custom-card-style-1-title,
+.custom-card-style-1 .custom-card-style-1-link {
+    transition: ease color 300ms;
+}
+
+.custom-card-style-1:hover .custom-card-style-1-image-wrapper img {
+    transform: translate3d(0, 0, 0);
+}
+
+.desc-prod {
+	min-height: 107px;
+}
