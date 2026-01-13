@@ -10323,7 +10323,6 @@ h3 {
 	font-weight: 400;
 	line-height: 24px;
 	margin-bottom: 33px;
-	text-transform: uppercase;
 }
 
 h4 {
@@ -11628,7 +11627,7 @@ html.lightbox-opened.sticky-header-active #header .header-body {
 .list.list-icons.list-icons-lg.list-icons-style-2 li a:first-child > .icons:first-child {
 	width: 30px;
 	height: 30px;
-	padding: 4px;
+	padding: 0px;
 }
 
 .list.list-icons.list-icons-lg.list-icons-style-3 li {
